@@ -15,6 +15,9 @@ describe('Orders Page', () => {
       }
     })
   })
+  it('Should be able to load main page', () => {
+    cy.visit('http://localhost:3000')
+  })
 
   it('Should have a title of Burrito Builder', () => {
     cy.contains('h1', 'Burrito Builder')
